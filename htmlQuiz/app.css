@@ -72,11 +72,11 @@ border-color: blueviolet;
 .hide{display: none;
 }
 
-.btn.correct {
+.btn.correct{
     --hue: var(--hue-correct);
     color: black;
   }
 
-  .btn.wrong {
+.btn.wrong{
     --hue: var(--hue-wrong);
   }
