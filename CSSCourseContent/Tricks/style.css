@@ -1,0 +1,10 @@
+.tr{
+clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+height: 40%;
+width: 40%;
+background-color: #8DB5ED;
+background-image: url(image2.jpg);
+position: absolute;
+z-index: -1;
+
+}
