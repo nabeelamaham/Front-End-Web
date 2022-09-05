@@ -56,6 +56,26 @@ document.getElementById("demo").innerHTML=vehicles;
 vehicles.reverse();
 document.getElementById("demo").innerHTML=vehicles;
 
+//map
+
+let num1=[2,3,4,5,6,7];
+
+let num2=num1.map(multiply);
+function multiply(value){
+    return value*2;
+}
+document.getElementById("demo").innerHTML=num2;
+
+//filter
+let num3= num1.filter(comp);
+
+function comp(value){
+    return value>4;
+}
+document.getElementById("demo").innerHTML=num3;
+
+//reduce
+
 
 
 </script>
