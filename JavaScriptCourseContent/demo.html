@@ -21,6 +21,40 @@ document.getElementById("demo").innerHTML=last;
 //loop over an array element
 
 cars.forEach((item,index,array) => (console.log(item,index)));
+//pop
+
+let last1=cars.pop();
+
+document.getElementById("demo").innerHTML=last1;
+let last2 = cars[cars.length -1];
+console.log(last2);
+//push
+cars.push("Audi");
+document.getElementById("demo").innerHTML=cars;
+
+//shift
+
+cars.shift();
+document.getElementById("demo").innerHTML=cars;
+
+//unshift
+cars.unshift("Hyundai");
+document.getElementById("demo").innerHTML=cars;
+
+//concate
+let bikes = ["yamaha","suzuki","royal enfield"];
+let vehicles =cars.concat(bikes);
+document.getElementById("demo").innerHTML=vehicles;
+
+//sort
+
+vehicles.sort();
+document.getElementById("demo").innerHTML=vehicles;
+
+//reverse
+
+vehicles.reverse();
+document.getElementById("demo").innerHTML=vehicles;
 
 
 
