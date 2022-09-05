@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=scr, initial-scale=1.0">
+    <title>JS Objects</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+<script>
+
+//object initialization
+
+var student={
+name:"Nabeela Maham",
+age:21,
+studies:"IT"
+};
+//document.getElementById("demo").innerHTML=student.name + "    " +student.age + student.studies;
+
+    </script>
+
+<script>
+
+// create an object
+var student = new Object();
+    student.name = "Mirza Hamdan Baig";
+    student.age = 28;
+    student.studies = "Cyber Security" ;
+//document.getElementById("demo").innerHTML=student.name 
+//+ "    " +student.age + "    " + student.studies;
+
+</script>
+
+<script>
+//construction
+var name,age,studies;
+function stud(name,age,studies){
+    this.name=name;
+    this.age=age;
+    this.studies=studies;
+}
+var student = stud("Nabeela",23,"IT");
+document.getElementById("demo").innerHTML=name + "    " + age + "    " + studies;
+
+</script>
+
+</body>
+</html>
