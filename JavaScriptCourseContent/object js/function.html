@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="demo"></h1>
+<!--  <script>
+        function my_function(val){
+            document.getElementById("demo").innerHTML=val*val;
+        }
+        my_function(5);
+    </script>
+
+    
+<script>
+
+    let x =  function(){
+        alert("hello");
+    }
+    document.getElementById("demo").innerHTML=x();
+       </script>
+-->
+       <script>
+        var myfunction = new Function("a","b","return a+b")
+        var x1 = myfunction(2,3)
+        document.getElementById("demo").innerHTML=x1
+
+       </script>
+
+
+<script>
+    (function(){
+        alert("hello everyone");
+    })();
+
+
+</script>
+</body>
+</html>
