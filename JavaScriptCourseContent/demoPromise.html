@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+<script>
+    let car = new Promise(function(resolve,reject){
+        fuel_fullTank = false;
+        if(fuel_fullTank){
+            resolve();
+        }
+        else{
+            reject();
+        }
+    })
+    car.then(function(){
+        document.write("The fuel tank is full. Happy Vacations")
+    }).catch(function(){
+        document.write("The fuel tank is not empty")
+    })
+</script>
+</body>
+
+</html>
