@@ -30,22 +30,22 @@ let empty_tank=function(){
         resolve("The car does not have enough fuel")
     })
 }
-let engines=function(){
+let engines=function(msg){
     return new Promise(function(resolve,reject){
-        resolve("the ngine is over heating")
+        resolve(msg + "the ngine is over heating")
     })
 }
-let travel=function(){
+let travel=function(msg){
     return new Promise(function(resolve,reject){
-        resolve("Car is not safe for travelling ")
+        resolve(msg + "Car is not safe for travelling ")
     })
 }
-empty_tank().then(function(){
-    return engines()
-    }).then(function(){
-        return travel()
-    }).then(function(){
-        console.log("Done")
+empty_tank().then(function(result){
+    return engines(result)
+    }).then(function(result){
+        return travel(result)
+    }).then(function(result){
+        console.log("Done" + result)
     })
 </script>
 </body>
