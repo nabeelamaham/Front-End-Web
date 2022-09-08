@@ -23,7 +23,7 @@
     }
     document.getElementById("demo").innerHTML=x();
        </script>
--->
+
        <script>
         var myfunction = new Function("a","b","return a+b")
         var x1 = myfunction(2,3)
@@ -36,6 +36,47 @@
     (function(){
         alert("hello everyone");
     })();
+</script>
+
+<script>
+function Product(a,b){
+    return a*b
+}
+let y=Product(2,5)*5
+document.getElementById("demo").innerHTML=y;
+</script>
+
+-->
+<script>
+var body = "return Math.PI*rad*rad";
+var circle = new Function("rad",body);
+alert(circle(5));
+</script>
+
+
+
+<script>
+const Myfunc=(a,b,c) =>{return a*b*c}
+let product = Myfunc(2,3,4)
+document.getElementById("demo").innerHTML=product;
+
+</script>
+
+<script>
+function* generateFunc(){
+    yield 1;
+    yield 2;
+    return 3;
+}
+let generator =generateFunc();
+let one =generator.next();
+alert(JSON.stringify(one));
+
+let two =generator.next();
+alert(JSON.stringify(two));
+
+let three =generator.next();
+alert(JSON.stringify(three));
 
 
 </script>
