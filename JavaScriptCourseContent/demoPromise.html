@@ -3,25 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <p id="demo"></p>
-<script>
-    let car = new Promise(function(resolve,reject){
-        fuel_fullTank = false;
-        if(fuel_fullTank){
-            resolve();
-        }
-        else{
-            reject();
-        }
-    })
+<!-- <script>
+    // let car = new Promise(function(resolve,reject){
+    //     fuel_fullTank = false;
+    //     if(fuel_fullTank){
+    //         resolve();
+    //     }
+    //     else{
+    //         reject();
+    //     }
+    // })
     car.then(function(){
         document.write("The fuel tank is full. Happy Vacations")
     }).catch(function(){
         document.write("The fuel tank is not empty")
+    })
+</script> -->
+
+<script>
+let empty_tank=function(){
+    return new Promise(function(resolve,reject){
+        resolve("The car does not have enough fuel")
+    })
+}
+let engines=function(){
+    return new Promise(function(resolve,reject){
+        resolve("the ngine is over heating")
+    })
+}
+let travel=function(){
+    return new Promise(function(resolve,reject){
+        resolve("Car is not safe for travelling ")
+    })
+}
+empty_tank().then(function(){
+    return engines()
+    }).then(function(){
+        return travel()
+    }).then(function(){
+        console.log("Done")
     })
 </script>
 </body>
