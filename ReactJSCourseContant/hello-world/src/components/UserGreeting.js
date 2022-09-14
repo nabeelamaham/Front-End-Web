@@ -9,6 +9,8 @@ class UserGreeting extends Component {
     }
 }
   render() {
+
+    // approach 3 and 4 are most used
     // approach 4 SHORT CIRCUIT OPERATOR 
     return this.state.isLoggedIn && <div>Welcome Nabeela </div>
 
