@@ -4,12 +4,19 @@ import './App.css';
 import Greet from './components/Greet.js';
 import Welcome from './components/welcome';
 import Hello from './components/Hello';
-
+import Message from './components/Message';
+import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
 class App extends Component {
 render(){  
   return (
     <div className="App">
-  <Greet name="Nabeela" heroName="FirstName">
+    <FunctionClick />
+    <ClassClick />
+    {/*   <Counter />
+      <Message/> 
+   <Greet name="Nabeela" heroName="FirstName">
     <p>This is the children property</p>
     </Greet>
   <Greet name="Maham" heroName="LastName">
@@ -17,10 +24,11 @@ render(){
   </Greet>
   
   <Greet name="Shakeel" heroName="FatherName"/>
-   <Welcome name="Nabeela" heroName="FirstName"/>
-   <Welcome name="Maham" heroName="LastName"/>
-   <Welcome name="Shakeel" heroName="FatherName"/>
-  {/* <Hello /> */}
+  
+  <Welcome name="Nabeela" heroName="FirstName"/>
+ <Welcome name="Maham" heroName="LastName"/>
+   <Welcome name="Shakeel" heroName="FatherName"/> 
+    <Hello /> */}
     </div>
   );
 }
