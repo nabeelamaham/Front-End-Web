@@ -19,28 +19,19 @@ import styles from './appStyles.module.css'
  */
 import Lifecycle from './components/lifecycle';
 import Form from './components/Form'
+import FragmentDemo from './components/FragmentDemo'
+import Table from './components/Table';
+import ParentComp from './components/ParentComp';
 class App extends Component {
 render(){  
   return (
  <div className="App">
+<ParentComp />
 
-<Lifecycle/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     {/*<Form />
+{/* <Table />
+<FragmentDemo />
+<Lifecycle/>   
+  <Form />
      <h1 className='error'>Error</h1>
 <h1 className={styles.success}>Success</h1>
     <Inline />
