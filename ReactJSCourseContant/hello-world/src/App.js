@@ -27,17 +27,40 @@ import FocusInput from './components/FocusInput';
 import FRParentInput from './FRParentInput';
 import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
-*/
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+*/
+import User from './components/User';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCountTwo from './components/HoverCountTwo';
+import Counter2 from './components/Counter2';
 class App extends Component {
 render(){  
   return (
  <div className="App">
+ <Counter2 
+ render={(count,incrementCount) =>(
+  <ClickCounterTwo count={count} incrementCount={incrementCount}/>
+  )}
+/>
+  <Counter2 
+  render={(count,incrementCount) =>(
+    <HoverCountTwo count={count} incrementCount={incrementCount}/>
+   
+    )}
+  // 'render =' hata den tou pura code as a children treat hoga 
+  //phir counter2 mai this.props.render ki jaga this.props.children likha jaega 
+ />
+ 
+ 
+ {/*
+ <User render={(isLoggedIn) => isLoggedIn ? 'Nabeela' :'Guest'} />
+ <ClickCounterTwo/>
+  <HoverCountTwo/> 
  
   <HoverCounter name='Nabeela'/>
   <ClickCounter/>
-  {/* 
+  
   <ErrorBoundary>  
   <Hero heroName="Batman" ></Hero>
   </ErrorBoundary>
