@@ -29,15 +29,22 @@ import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
-*/
 import User from './components/User';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCountTwo from './components/HoverCountTwo';
 import Counter2 from './components/Counter2';
+*/
+import ComponentC  from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
 class App extends Component {
 render(){  
   return (
  <div className="App">
+{/*   <UserProvider value="Nabeela"> */}
+ <ComponentC/>
+{/*  </UserProvider> */}
+  {/*
+
  <Counter2 
  render={(count,incrementCount) =>(
   <ClickCounterTwo count={count} incrementCount={incrementCount}/>
@@ -52,8 +59,6 @@ render(){
   //phir counter2 mai this.props.render ki jaga this.props.children likha jaega 
  />
  
- 
- {/*
  <User render={(isLoggedIn) => isLoggedIn ? 'Nabeela' :'Guest'} />
  <ClickCounterTwo/>
   <HoverCountTwo/> 
